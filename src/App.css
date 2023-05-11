@@ -23,7 +23,7 @@
 /* } */
 
 * {
-  background: red;
+  /* background: red; */
   
 }
 body {
@@ -32,14 +32,14 @@ body {
   /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .distortion {
   width: 800px;
-  height: 800px; 
+height: 800px; 
 
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   /* background-position: center; */
 /* background: blue; */
 }

@@ -4,21 +4,19 @@ import './App.css'
 
 import hoverEffect from 'hover-effect'
 
-function Carnage(params) {
-  new hoverEffect({
-   parent: document.querySelector(".distortion"),
-   intensity: 0.4,
-   image1: "./src/assets/Carnage-kneeling.png",
-   image2: "./src/assets/Carnage-standing.png",
-   displacementImage: "./src/assets/fogDiss.png",
- });
-  
-}
-
 function App() {
+
 useEffect(() => {
-Carnage()
-}, [Carnage])
+const carnage =  new hoverEffect({
+    parent: document.querySelector(".distortion"),
+    intensity: 0.4,
+    image1: "./src/assets/Carnage-kneeling.png",
+    image2: "./src/assets/Carnage-standing.png",
+    displacementImage: "./src/assets/fogDiss.png",
+  });
+} )
+
+
   return (
     <>
     <div className="landing">
@@ -29,7 +27,7 @@ Carnage()
             </p>
         </div>
       
-        <div className="distortion"></div>
+        <div className="distortion" ></div>
     
     </div>
     </>
