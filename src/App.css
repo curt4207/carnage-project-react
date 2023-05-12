@@ -6,6 +6,11 @@
   font-weight: 400; 
 }
 
+:root {
+  --CarnageK: url("/CarnageKneeling.png");
+  --CarnageS: url("/CarnageStanding.png");
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -22,27 +27,32 @@
   -webkit-text-size-adjust: 100%; */
 /* } */
 
-* {
-  /* background: red; */
+/* * {
+  background: red;
   
-}
+} */
 body {
   margin: 0;
   display: flex;
   /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
-  /* overflow: hidden; */
+
+  
 }
 
-.distortion {
-  width: 800px;
-height: 800px; 
+.App {
+  font-family: sans-serif;
+  text-align: center;
 
-  background-repeat: no-repeat;
-  /* background-position: center; */
-/* background: blue; */
+
 }
+
+.parent {
+  margin: 0 auto;
+
+}
+
 
 /* .landing {
   display: flex;
@@ -52,3 +62,4 @@ height: 800px;
 /* .intro h1 {
   font-size: 55px;
 } */
+

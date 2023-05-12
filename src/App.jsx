@@ -1,20 +1,20 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import './App.css'
-// import * as THREE from 'three';
-
 import hoverEffect from 'hover-effect'
 
 function App() {
 
+  const container = useRef();
+
 useEffect(() => {
-const carnage =  new hoverEffect({
-    parent: document.querySelector(".distortion"),
+  new hoverEffect({
+    parent: container.current,
     intensity: 0.4,
-    image1: "./src/assets/Carnage-kneeling.png",
-    image2: "./src/assets/Carnage-standing.png",
-    displacementImage: "./src/assets/fogDiss.png",
+    image1:  "/CarnageKneeling.png",
+    image2: "/CarnageStanding.png",
+    displacementImage: "/fogDiss.png",
   });
-} )
+},[container] )
 
 
   return (
@@ -27,7 +27,16 @@ const carnage =  new hoverEffect({
             </p>
         </div>
       
-        <div className="distortion" ></div>
+        <div
+        className="parent"
+        id="imgContainer"
+        ref={container}
+        style={{
+          width: 600,
+          height: 600,
+        
+        }}
+      />
     
     </div>
     </>
