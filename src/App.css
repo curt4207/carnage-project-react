@@ -3,52 +3,74 @@
   text-align: center;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400; 
+  font-weight: 400;
 }
 
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400; */
-
-  /* color-scheme: light dark; */
-  /* color: rgba(255, 255, 255, 0.87); */
-  /* background-color: #242424; */
-
-  /* font-synthesis: none; */
-  /* text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%; */
-/* } */
+:root {
+ --DropSize: 1.5rem;
+}
 
 * {
-  /* background: red; */
-  
+  background: #880808;
 }
+
 body {
   margin: 0;
   display: flex;
-  /* place-items: center; */
+  justify-content: center;
+  place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* overflow: hidden; */
+  box-sizing: border-box;
 }
 
-.distortion {
-  width: 800px;
-height: 800px; 
-
-  background-repeat: no-repeat;
-  /* background-position: center; */
-/* background: blue; */
+.App {
+  font-family: sans-serif;
 }
 
-/* .landing {
+.parent {
+  margin-left: auto;
+}
+
+.landing {
   display: flex;
- 
-} */
+  
+}
+@media screen and (max-width: 1248px) {
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+}
 
-/* .intro h1 {
-  font-size: 55px;
-} */
+
+.intro h1 {
+  font-size: 8rem;
+  font-family: 'Creepster', cursive;
+  margin: 0;
+  letter-spacing: 15px;
+  color: #00000083;
+
+  text-shadow: 1px 1px 5px red,
+  1px 1px 6px rgb(17, 1, 1),
+   1px 1px 5px red;
+
+}
+
+h5 {
+  font-size: 1rem;
+  letter-spacing: 8px;
+  text-shadow: 1px 1px 2px red; 
+}
+h6 {
+  margin: 0;
+}
+
+.intro p {
+  max-width: 500px;
+  display: flex;
+  text-shadow: 1px 1px 2px rgb(110, 97, 97);
+  font-weight: 700;
+}
+
