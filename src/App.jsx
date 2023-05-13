@@ -14,6 +14,7 @@ function App() {
       image2: "/CarnageStanding.png",
       displacementImage: "/Carnage_Main.jpg",
     });
+    console.log( "Curtis Clayton GitHub","https://github.com/curt4207")
   }, [container]);
 
   return (
@@ -28,7 +29,7 @@ function App() {
             survive without the other. Forget host. Forget symbiote. There is
             only Carnage.
           </p>
-          <h5>— Carnage</h5>
+          <h4>— Carnage</h4>
         </div>
 
         <div
@@ -42,7 +43,15 @@ function App() {
           }}
         />
       </div>
-        <h6>by Curtis Clayton</h6>
+        <h5>
+        by: Curtis Clayton 
+      
+        <img src="src/assets/curtis-png.png"  />
+
+      
+        <br />
+         Mouse Over or On Mobile Tap Image
+        </h5>
         
     </>
   );
