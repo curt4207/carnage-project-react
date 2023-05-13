@@ -44,11 +44,7 @@ function App() {
         />
       </div>
         <h5>
-        by: Curtis Clayton 
-      
-        <img src="src/assets/curtis-png.png"  />
-
-      
+        by: Curtis Clayton
         <br />
          Mouse Over or On Mobile Tap Image
         </h5>
